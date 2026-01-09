@@ -1,20 +1,19 @@
 # EcoPoints Recycling Tracker
 
-Rastreador en Java para hogares: registra eventos de reciclaje, calcula EcoPoints y genera reportes comunitarios. Los datos se guardan en `households.ser` (ignorado por Git).
+Rastreador en Java para hogares: registra eventos de reciclaje, calcula EcoPoints y genera reportes comunitarios. Los datos se guardan en `households.ser` (No necesitas crearlo).
 
 ## Requisitos
-- Git
 - JDK 11+ (verificar con `java -version`)
 
 ## Clonar
 ```bash
-git clone <REPO_URL>
+git clone https://github.com/JestebanPedraza/ecopoints-recyclingtracker.git
 cd EcoPonitsRecyclingTracker
 ```
 
 ## Compilar y ejecutar (Windows)
 ```powershell
-javac -d classes *.java
+javac -cp .\classes -d .\classes *.java
 java -cp classes EcoPointsRecyclingTracker
 ```
 
